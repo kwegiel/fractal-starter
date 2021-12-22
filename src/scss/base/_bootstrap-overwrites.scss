@@ -1,0 +1,58 @@
+
+@import "../utilities/variables"; // import to get colors
+
+//
+// Spacers
+//
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5), 
+    12: ($spacer * .75), 
+    3: $spacer,
+    4: ($spacer * 1.5),
+    27: ($spacer * 1.6875),
+    32: ($spacer * 2),
+    5: ($spacer * 3),
+    6: ($spacer * 4),
+    7: ($spacer * 4.5),
+    8: ($spacer * 5),
+    9: ($spacer * 6)
+  ),
+  $spacers
+);
+
+//position values
+$position-values: (
+    0: 0,
+    4: 4%,
+    5: 5%,
+    10: 10%,
+    20: 20%,
+    30: 30%,
+    40: 40%,
+    50: 50%,
+    60: 60%,
+    70: 70%,
+    80: 80%,
+    90: 90%,
+    100: 100%
+);
+
+//
+//Buttons:
+//
+
+//radius
+$btn-border-radius: 3rem;
+$btn-border-radius-sm: $btn-border-radius;
+$btn-border-radius-lg: $btn-border-radius;
+
+//paddings
+$input-btn-padding-y: 0.4375rem;
+$input-btn-padding-x: 1.25rem;
+$input-btn-padding-y-sm: 0.532rem;
+$input-btn-padding-x-sm: $input-btn-padding-x;

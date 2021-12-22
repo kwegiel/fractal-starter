@@ -1,0 +1,46 @@
+// Colors
+$primary:                #4FB3DE;
+$secondary:              #202020;
+$success:                #9EDB51;
+$info:                   #0065CD;
+$light-grey:             #F5F5F5;
+$warning:                #FFBB00;
+$alert:                  #DB4D3D;
+$dark-grey:              #46464C;
+$text-muted:             #999999;
+$body-color:             #383A3C;
+$white:                  #FFFFFF;
+$black:                  #000000;
+$black-secondary:        #1E2A32;
+$grey:                   #333333;
+$grey-secondary:         #ddddde;
+$light-grey-border:      #eeeeee;
+$grey-darker-bg:         #CCCCCD;
+$grey-table-border:      #D3D3D3;
+$orange:                 #E9770F;
+$light-blue:             #4FB3DE;
+
+
+$theme-colors: (
+        "primary":            $primary,
+        "secondary":          $secondary,
+        "success":            $success,
+        "info":               $info,
+        "warning":            $warning,
+        "danger":             $alert,
+        "light":              $light-grey,
+        "dark":               $grey,
+        "black":              $black,
+        "body-color":         $body-color,
+        "dark-grey":          $dark-grey,
+        "grey-secondary":     $grey-secondary,
+) !default;
+
+// Typography
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+// Links
+$link-color: $secondary;
+
+// Tables
+$table-border: $grey-table-border

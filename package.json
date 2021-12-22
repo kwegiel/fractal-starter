@@ -1,0 +1,35 @@
+{
+  "name": "fractal-library",
+  "version": "0.1.0",
+  "dependencies": {
+    "@frctl/fractal": "^1.5.11",
+    "@frctl/mandelbrot": "^1.9.4",
+    "@frctl/twig": "^1.2.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@popperjs/core": "^2.9.2",
+    "babel-loader": "^8.2.2",
+    "bootstrap": "^5.1.2",
+    "concurrently": "^6.3.0",
+    "css-loader": "^5.2.6",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^1.6.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.32.12",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "svg-spritemap-webpack-plugin": "^4.0.3",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "scripts": {
+    "prebuild": "rimraf build",
+    "assets": "webpack --mode=production",
+    "assets:watch": "webpack --watch --mode=development",
+    "fractal:start": "fractal start --sync",
+    "fractal:build": "fractal build",
+    "build": "npm run assets && npm run fractal:build",
+    "start":  "concurrently --names \"FRACTAL,JS & SASS WATCH\" -c \",bgMagenta.bold bgBlue.bold,bgMagenta.bold,bgMagenta.bold,bgMagenta.bold,bgMagenta.bold\" \"npm run fractal:start\" \"npm run assets:watch\""
+  }
+}
